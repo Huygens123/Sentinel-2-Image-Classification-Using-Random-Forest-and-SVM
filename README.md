@@ -35,14 +35,18 @@ The workflow includes:
     * The "False Color Composite" (top right) uses specific wavelength bands to emphasize vegetation and urban features. In this visualization, the red areas typically indicate healthy vegetation, while cyan or light blue areas often represent urban development. This color contrast helps easily distinguish between built-up areas and natural vegetation.
     * The "False Color (Urban)" visualization (middle left) is specifically designed to highlight urban areas, showing them in purple tones. This treatment makes it easier to analyze urban sprawl and development patterns. The bright purple area in the center clearly delineates the extent of the urban development.
     * The "Agriculture" image (middle right) uses color coding to emphasize agricultural areas and vegetation health. The bright green areas indicate active agriculture or healthy vegetation, while the purple center represents urban development.
-   *  The "Vegetation Analysis" (bottom left) appears to use spectral bands that highlight variations in vegetation density and health. The blue areas might indicate less vegetated or bare areas, while the yellow and orange tones could represent different types or states of vegetation cover.
-   *  The "Land/Water" classification (bottom right) seems designed to distinguish between different types of land cover, with blue areas potentially indicating water bodies or moisture content, and the varying shades of green and brown representing different types of land use.
+    * The "Vegetation Analysis" (bottom left) appears to use spectral bands that highlight variations in vegetation density and health. The blue areas might indicate less vegetated or bare areas, while the yellow and orange tones could represent different types or states of vegetation cover.
+    * The "Land/Water" classification (bottom right) seems designed to distinguish between different types of land cover, with blue areas potentially indicating water bodies or moisture content, and the varying shades of green and brown representing different types of land use.
 
 - **Statistical Analysis:**  
   Histograms and scatter plots highlighted the relationships between spectral bands, revealing patterns relevant to land cover classification.  
     ![The distribution of class features across the bands (Blue, Green, Red, NIR, SWIR-1, and SWIR-2) of Sentinel-2 imagery.](images/class_distibution.png)
-  
-  
+  * In B2 (Blue) (top left), we see relative variations, with pixel values ranging between 1000-2500 units. Trees show the highest peak here, which may imply that the band is particularly sensitive to vegetation.
+  * B3 (Green) (top right) shows similar patterns but with slightly higher values, reaching up to 3000 units. This increased sensitivity helps differentiate between different types of vegetation - notice how the tree line (orange) separates more distinctly from crops (green).
+  * B4 (Red) (middle left) shows a greater sensitivity, with measurements reaching 3500 units. The separation between different class features becomes apparent, making this band particularly useful for distinguishing between different landscape elements.
+  * B8 (NR) (middle right) shows the most dramatic readings of all, with peaks reaching 4500 units. This band appears to be especially sensitive to all features, showing very clear distinctions between them. Notice how all four lines reach their highest points here, suggesting this band might be particularly useful for comprehensive landscape analysis.
+  * B11 and B12 (bottom row) show slightly different patterns, with generally higher baseline readings but less dramatic peaks. These bands might be particularly useful for detecting subtle variations in landscape features that other bands might miss.
+The relationship between different feature changes across bands is apparent here. For example, water bodies (blue line) generally show lower readings than vegetation, but in some bands, this difference becomes more or less pronounced. This varying sensitivity across different bands is what makes multi-spectral satellite imaging so powerful and allows for the detection and analysis of features that might not be visible to the naked eye.
 ### **2. Machine Learning Models**  
 After preprocessing the data, machine learning models were applied to classify land cover types:  
 - **Algorithms Used:**  
