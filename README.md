@@ -1,7 +1,7 @@
 # Sentinel-2-Image-Classification-Using-Random-Forest-and-SVM
 
 ## **Project Overview**  
-This project involves analyzing Sentinel-2 satellite imagery for Iwo Local Government, Osun State, Nigeria. The study focuses on understanding spatial patterns, extracting key insights using machine learning models, and visualizing vegetation and land cover features.  
+This project analyses Sentinel-2 satellite imagery for Iwo Local Government, Osun State, Nigeria. The study focuses on understanding spatial patterns, extracting key insights using machine learning models, and visualizing vegetation and land cover features.  
 
 The workflow includes:  
 1. Data exploration and preprocessing.  
@@ -29,9 +29,9 @@ The workflow includes:
   Loaded and preprocessed Sentinel-2 bands using `rasterio`, aligning and clipping the data to the study area.  
 
 - **Data Visualization:**  
-  - True-color and false-color composites were created for a visual understanding of the landscape.  
-  - NDVI maps were generated to assess vegetation health.  
-  - Interactive maps were built using `folium` for dynamic exploration.  
+  - True-color and false-color composites were created to visually understand the landscape.
+    ![Layer Composition](images/raster_band.png)
+    The top left image shows the "Natural Color" view, which presents the landscape as it would appear to the human eye from above. In this image, we can see what appears to be an urban centre (appearing as a bright white area in the centre) surrounded by darker regions that likely represent less developed or natural areas
 
 - **Statistical Analysis:**  
   Histograms and scatter plots highlighted the relationships between spectral bands, revealing patterns relevant to land cover classification.  
@@ -40,12 +40,7 @@ The workflow includes:
 After preprocessing the data, machine learning models were applied to classify land cover types:  
 - **Algorithms Used:**  
   - Random Forest (RF)  
-  - Support Vector Machine (SVM)  
-  - Gradient Boosting  
-- **Feature Engineering:**  
-  - Used spectral bands and derived indices (e.g., NDVI) as input features.  
-  - Extracted additional features from raster textures and spatial characteristics.  
-
+  - Support Vector Machine (SVM)
 - **Model Evaluation:**  
   Models were evaluated using metrics such as accuracy, precision, recall, and F1-score. Confusion matrices were plotted to analyze performance across classes.  
 
@@ -97,6 +92,6 @@ After preprocessing the data, machine learning models were applied to classify l
 ---
 
 ## **Contributors**  
-- ** Abdulquawiyy A. Owolabi** - Geospatial Scientist  
+- **Abdulquawiyy A. Owolabi** - Geospatial Scientist  
 
 For questions or contributions, feel free to reach out or open an issue in this repository. 
