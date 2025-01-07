@@ -31,11 +31,17 @@ The workflow includes:
 - **Data Visualization:**  
   - True-color and false-color composites were created to visually understand the landscape.
     ![Layer Composition](images/raster_band.png)
-    The top left image shows the "Natural Color" view, which presents the landscape as it would appear to the human eye from above. In this image, we can see what appears to be an urban centre (appearing as a bright white area in the centre) surrounded by darker regions that likely represent less developed or natural areas
+    The top left image shows the `Natural Color` view, which presents the landscape as it would appear to the human eye from above. In this image, we can see what appears to be an urban centre (appearing as a bright white area in the centre) surrounded by darker regions that likely represent less developed or natural areas.
+    The "False Color Composite" (top right) uses specific wavelength bands to emphasize vegetation and urban features. In this visualization, the red areas typically indicate healthy vegetation, while cyan or light blue areas often represent urban development. This color contrast helps easily distinguish between built-up areas and natural vegetation.
+    The "False Color (Urban)" visualization (middle left) is specifically designed to highlight urban areas, showing them in purple tones. This treatment makes it easier to analyze urban sprawl and development patterns. The bright purple area in the center clearly delineates the extent of the urban development.
+    The "Agriculture" image (middle right) uses color coding to emphasize agricultural areas and vegetation health. The bright green areas indicate active agriculture or healthy vegetation, while the purple center represents urban development.
+    The "Vegetation Analysis" (bottom left) appears to use spectral bands that highlight variations in vegetation density and health. The blue areas might indicate less vegetated or bare areas, while the yellow and orange tones could represent different types or states of vegetation cover.
+Finally, the "Land/Water" classification (bottom right) seems designed to distinguish between different types of land cover, with blue areas potentially indicating water bodies or moisture content, and the varying shades of green and brown representing different types of land use.
 
 - **Statistical Analysis:**  
   Histograms and scatter plots highlighted the relationships between spectral bands, revealing patterns relevant to land cover classification.  
-
+    ![Layer Composition](images/class_distibution.png)
+  
 ### **2. Machine Learning Models**  
 After preprocessing the data, machine learning models were applied to classify land cover types:  
 - **Algorithms Used:**  
