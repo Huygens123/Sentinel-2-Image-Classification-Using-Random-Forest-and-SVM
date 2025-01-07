@@ -11,19 +11,18 @@ The workflow includes:
 ---
 
 ## **Objectives**  
-- Conduct an exploratory analysis to understand the spectral and spatial characteristics of Sentinel-2 data.  
-- Derive meaningful metrics (e.g., NDVI) to assess vegetation health and land cover.  
+- Conduct an exploratory analysis to understand the spectral and spatial characteristics of Sentinel-2 data.    
 - Apply machine learning models to classify land cover types and evaluate their performance.  
 
 ---
 
 ## **Data Sources**  
 - **Sentinel-2 Imagery:** Multispectral satellite data providing high-resolution information across 13 spectral bands.  
-- **Geospatial Shapefiles:** Boundary data of Iwo Local Government to focus the analysis.  
+- **Geospatial Shapefiles:** Boundary data of Iwo Local Government.  
 
 ---
 
-## **Workflow**  
+## **Methodology**  
 
 ### **1. Exploratory Data Analysis (EDA)**  
 - **Data Loading and Preparation:**  
