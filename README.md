@@ -88,7 +88,7 @@ After preprocessing the data, machine learning models were applied to classify l
 ## **How to Use**  
 1. Clone the repository:  
    ```bash  
-   git clone https://github.com/your-repo-name.git  
+   git clone https://github.com/BreadcrumbsSentinel-2-Image-Classification-Using-Random-Forest-and-SVM.git  
    cd your-repo-name  
    ```  
 
