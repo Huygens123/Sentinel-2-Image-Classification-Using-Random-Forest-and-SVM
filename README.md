@@ -18,8 +18,7 @@ The workflow includes:
 
 ## **Data Sources**  
 - **Sentinel-2 Imagery:** Multispectral satellite data providing high-resolution information across 13 spectral bands.  
-- **Geospatial Shapefiles:** Boundary data of Iwo Local Government.  
-
+- **Geospatial Shapefiles:** Boundary data of Iwo Local Government and class files. The classes used for the project area ['Water Bodies', 'Trees', 'Crops', 'Built up Areas', 'Bareland', 'Rangeland']
 ---
 
 ## **Methodology**  
@@ -47,6 +46,8 @@ The workflow includes:
   * B8 (NR) (middle right) shows the most dramatic readings of all, with peaks reaching 4500 units. This band appears to be especially sensitive to all features, showing very clear distinctions between them. Notice how all four lines reach their highest points here, suggesting this band might be particularly useful for comprehensive landscape analysis.
   * B11 and B12 (bottom row) show slightly different patterns, with generally higher baseline readings but less dramatic peaks. These bands might be particularly useful for detecting subtle variations in landscape features that other bands might miss.
 The relationship between different feature changes across bands is apparent here. For example, water bodies (blue line) generally show lower readings than vegetation, but in some bands, this difference becomes more or less pronounced. This varying sensitivity across different bands is what makes multi-spectral satellite imaging so powerful and allows for the detection and analysis of features that might not be visible to the naked eye.
+
+
 ### **2. Machine Learning Models**  
 After preprocessing the data, machine learning models were applied to classify land cover types:  
 - **Algorithms Used:**  
@@ -89,7 +90,7 @@ After preprocessing the data, machine learning models were applied to classify l
 1. Clone the repository:  
    ```bash  
    git clone https://github.com/BreadcrumbsSentinel-2-Image-Classification-Using-Random-Forest-and-SVM.git  
-   cd your-repo-name  
+   cd entinel-2-Image-Classification   
    ```  
 
 2. Install dependencies:  
