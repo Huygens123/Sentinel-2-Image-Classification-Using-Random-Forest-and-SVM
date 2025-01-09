@@ -61,7 +61,7 @@ After preprocessing the data, machine learning models were applied to classify l
 ## **Results**  
 1. **EDA Findings:**  
    -  Distribution of bands
-     [Band Distribution](results/band_distribution.png) 
+     [Band Distribution](results/band_distribution.png)
    - Spectral band analysis indicated strong correlations useful for land classification.  
 
 2. **Machine Learning Outputs:**  
