@@ -62,11 +62,11 @@ After preprocessing the data, machine learning models were applied to classify l
 1. **EDA Findings:**  
    -  Distribution of bands
      [Band Distribution](results/band_distribution.png)
-   - Spectral band analysis indicated strong correlations useful for land classification.  
+   - COrreltion Analysis.  
 
 2. **Machine Learning Outputs:**  
    - Random Forest achieved the highest accuracy, effectively classifying forests, urban areas, and agricultural land.  
-   - Gradient Boosting performed well in distinguishing mixed vegetation zones.  
+   - Support vector machine (SVM) 
    - Confusion matrices highlighted misclassification trends, such as overlaps between urban and barren lands.  
 
 ---
