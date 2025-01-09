@@ -45,7 +45,7 @@ The workflow includes:
   * B4 (Red) (middle left) shows a greater sensitivity, with measurements reaching 3500 units. The separation between different class features becomes apparent, making this band particularly useful for distinguishing between different landscape elements.
   * B8 (NR) (middle right) shows the most dramatic readings of all, with peaks reaching 4500 units. This band appears to be especially sensitive to all features, showing very clear distinctions between them. Notice how all four lines reach their highest points here, suggesting this band might be particularly useful for comprehensive landscape analysis.
   * B11 and B12 (bottom row) show slightly different patterns, with generally higher baseline readings but less dramatic peaks. These bands might be particularly useful for detecting subtle variations in landscape features that other bands might miss.
-The relationship between different feature changes across bands is apparent here. For example, water bodies (blue line) generally show lower readings than vegetation, but in some bands, this difference becomes more or less pronounced. This varying sensitivity across different bands is what makes multi-spectral satellite imaging so powerful and allows for the detection and analysis of features that might not be visible to the naked eye.
+The relationship between different feature changes across bands is apparent here. For example, water bodies (blue line) generally show lower readings than vegetation, but this difference becomes more or less pronounced in some bands. This varying sensitivity across different bands makes multi-spectral satellite imaging so powerful. It allows for the detection and analysis of features that might not be visible to the naked eye.
 
 
 ### **2. Machine Learning Models**  
@@ -60,7 +60,8 @@ After preprocessing the data, machine learning models were applied to classify l
 
 ## **Results**  
 1. **EDA Findings:**  
-   - NDVI maps revealed distinct zones of dense vegetation and sparse or degraded areas.  
+   -  Distribution of bands
+     [Band Distribution](results/band_distribution.png) 
    - Spectral band analysis indicated strong correlations useful for land classification.  
 
 2. **Machine Learning Outputs:**  
