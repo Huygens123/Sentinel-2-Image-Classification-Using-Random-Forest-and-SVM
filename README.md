@@ -35,7 +35,7 @@ The workflow includes:
     * The "False Color (Urban)" visualization (middle left) is specifically designed to highlight urban areas, showing them in purple tones. This treatment makes it easier to analyze urban sprawl and development patterns. The bright purple area in the center clearly delineates the extent of the urban development.
     * The "Agriculture" image (middle right) uses color coding to emphasize agricultural areas and vegetation health. The bright green areas indicate active agriculture or healthy vegetation, while the purple center represents urban development.
     * The "Vegetation Analysis" (bottom left) appears to use spectral bands that highlight variations in vegetation density and health. The blue areas might indicate less vegetated or bare areas, while the yellow and orange tones could represent different types or states of vegetation cover.
-    * The "Land/Water" classification (bottom right) seems designed to distinguish between different types of land cover, with blue areas potentially indicating water bodies or moisture content, and the varying shades of green and brown representing different types of land use.
+    * The "Land/Water" classification (bottom right) seems designed to distinguish between different land cover types, with blue areas potentially indicating water bodies or moisture content, and the varying shades of green and brown representing different types of land use.
 
 - **Statistical Analysis:**  
   Histograms and scatter plots highlighted the relationships between spectral bands, revealing patterns relevant to land cover classification.  
@@ -45,7 +45,7 @@ The workflow includes:
   * B4 (Red) (middle left) shows a greater sensitivity, with measurements reaching 3500 units. The separation between different class features becomes apparent, making this band particularly useful for distinguishing between different landscape elements.
   * B8 (NR) (middle right) shows the most dramatic readings of all, with peaks reaching 4500 units. This band appears to be especially sensitive to all features, showing very clear distinctions between them. Notice how all four lines reach their highest points here, suggesting this band might be particularly useful for comprehensive landscape analysis.
   * B11 and B12 (bottom row) show slightly different patterns, with generally higher baseline readings but less dramatic peaks. These bands might be particularly useful for detecting subtle variations in landscape features that other bands might miss.
-The relationship between different feature changes across bands is apparent here. For example, water bodies (blue line) generally show lower readings than vegetation, but this difference becomes more or less pronounced in some bands. This varying sensitivity across different bands makes multi-spectral satellite imaging so powerful. It allows for the detection and analysis of features that might not be visible to the naked eye.
+The relationship between different feature changes across bands is apparent here. For example, water bodies (blue line) generally show lower readings than vegetation, but this difference becomes more or less pronounced in some bands. This varying sensitivity across different bands makes multi-spectral satellite imaging so powerful. It allows for detecting and analysing features that might not be visible to the naked eye.
 
 
 ### **2. Machine Learning Models**  
@@ -54,7 +54,7 @@ After preprocessing the data, machine learning models were applied to classify l
   - Random Forest (RF)  
   - Support Vector Machine (SVM)
 - **Model Evaluation:**  
-  Models were evaluated using metrics such as accuracy, precision, recall, and F1-score. Confusion matrices were plotted to analyze performance across classes.  
+  Models were evaluated using accuracy, precision, recall, and F1-score metrics. Confusion matrices were plotted to analyze performance across classes.  
 
 ---
 
@@ -68,8 +68,9 @@ After preprocessing the data, machine learning models were applied to classify l
    - Random Forest achieved the highest accuracy, effectively classifying forests, urban areas, and agricultural land.
    - Support vector machine (SVM) 
    - Confusion matrices highlighted misclassification trends, such as overlaps between urban and barren lands.
-   - Classified image with the model.
-     ![Layer Composition](images/raster_band.png)
+   - Classified images with the models.
+     ![rf_image](results/rf_classiication.png)
+     ![svm_image](results/svm_classiication.png)
      
 ---
 
