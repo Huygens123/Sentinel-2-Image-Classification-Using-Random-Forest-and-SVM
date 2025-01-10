@@ -60,15 +60,17 @@ After preprocessing the data, machine learning models were applied to classify l
 
 ## **Results**  
 1. **EDA Findings:**  
-   -  Distribution of bands
+   -  Distribution of bands and NDVI
      [Band Distribution](results/band_distribution.png)
-   - COrreltion Analysis.  
+   - Correlation Analysis. ('results/correlation.csv')
 
 2. **Machine Learning Outputs:**  
-   - Random Forest achieved the highest accuracy, effectively classifying forests, urban areas, and agricultural land.  
+   - Random Forest achieved the highest accuracy, effectively classifying forests, urban areas, and agricultural land.
    - Support vector machine (SVM) 
-   - Confusion matrices highlighted misclassification trends, such as overlaps between urban and barren lands.  
-
+   - Confusion matrices highlighted misclassification trends, such as overlaps between urban and barren lands.
+   - Classified image with the model.
+     ![Layer Composition](images/raster_band.png)
+     
 ---
 
 ## **Tools and Libraries**  
@@ -76,15 +78,7 @@ After preprocessing the data, machine learning models were applied to classify l
 - **Data Manipulation:** `pandas`, `numpy`  
 - **Visualization:** `matplotlib`, `seaborn`, `folium`  
 - **Geospatial Analysis:** `rasterio`, `geopandas`, `earthpy`  
-- **Machine Learning:** `scikit-learn`, `xgboost`  
-
----
-
-## **Next Steps**  
-- Perform temporal analysis to track vegetation and land-use changes over time.  
-- Integrate field validation data to improve model accuracy.  
-- Develop a web-based dashboard to visualize results interactively for decision-making.  
-
+- **Machine Learning:** `scikit-learn`, `xgboost` 
 ---
 
 ## **How to Use**  
