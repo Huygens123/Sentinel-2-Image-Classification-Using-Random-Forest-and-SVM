@@ -74,11 +74,11 @@ After preprocessing the data, machine learning models were applied to classify l
 ---
 
 ## **Tools and Libraries**  
-- **Programming Language:** Python  
+- **Programming Language:** `Python`  
 - **Data Manipulation:** `pandas`, `numpy`  
 - **Visualization:** `matplotlib`, `seaborn`, `folium`  
 - **Geospatial Analysis:** `rasterio`, `geopandas`, `earthpy`  
-- **Machine Learning:** `scikit-learn`, `xgboost` 
+- **Machine Learning:** `scikit-learn`
 ---
 
 ## **How to Use**  
@@ -94,7 +94,7 @@ After preprocessing the data, machine learning models were applied to classify l
    ```  
 
 3. Run the notebooks:  
-   Open Jupyter Notebook and follow the steps in the `EDA_and_Machine_Learning.ipynb` file.  
+   Open Jupyter Notebook and follow the steps in the `EDA_and_Machine_Learning.ipynb` and `Model Training` file.  
 
 ---
 
