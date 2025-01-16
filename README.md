@@ -18,14 +18,15 @@ The workflow includes:
 
 ## **Data Sources**  
 - **Sentinel-2 Imagery:** Multispectral satellite data providing high-resolution information across 13 spectral bands.  
-- **Geospatial Shapefiles:** Boundary data of Iwo Local Government and class files. The classes used for the project area ['Water Bodies', 'Trees', 'Crops', 'Built up Areas', 'Bareland', 'Rangeland']
+- **Geospatial Shapefiles:** Boundary data of Iwo Local Government and class files and the feature classes used for the project area ['Water Bodies', 'Trees', 'Crops', 'Built up Areas', 'Bareland', 'Rangeland']
 ---
 
 ## **Methodology**  
 
 ### **1. Exploratory Data Analysis (EDA)**  
 - **Data Loading and Preparation:**  
-  Loaded and preprocessed Sentinel-2 bands using `rasterio`, aligning and clipping the data to the study area.  
+  Loaded and preprocessed Sentinel-2 bands using `rasterio`, aligning and clipping the data to the study area.
+  - Calculation of NDVI and NDMI
 
 - **Data Visualization:**  
   - True-color and false-color composites were created to visually understand the landscape.
