@@ -74,6 +74,10 @@ After preprocessing the data, machine learning models were applied to classify l
      ![svm_image](results/svm_classiication.png)
      
 ---
+## **Accuracy Assessment of the Models**  
+- **Random Forest:**
+  
+---
 
 ## **Tools and Libraries**  
 - **Programming Language:** `Python`  
