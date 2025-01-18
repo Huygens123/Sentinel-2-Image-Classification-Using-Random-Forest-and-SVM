@@ -76,12 +76,6 @@ After preprocessing the data, machine learning models were applied to classify l
 ---
 ## **Accuracy Assessment of the Models**  
 - **Random Forest:**
-  | Metric       | Value 
-|------------|-----|
-| Precision  |   | 
-| Accuracy |   |
-| Overall Accuracy   |   |
-|F 1 Score|
   
 ---
 
