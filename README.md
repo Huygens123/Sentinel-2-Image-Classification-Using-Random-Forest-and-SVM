@@ -76,9 +76,7 @@ After preprocessing the data, machine learning models were applied to classify l
 ---
 ## **Accuracy Assessment of the Models**  
 - **Random Forest:**
-  # Model Performance
-
-The Random Forest classifier achieves 82% overall accuracy with bimodal prediction probability distribution, showing high confidence at extremes (0 and 1).
+The Random Forest classifier achieves 82% overall accuracy with a bimodal prediction probability distribution, showing high confidence at extremes (0 and 1).
 
 Class performance varies significantly:
 - **Trees**: Excellent performance (F1=0.88) with strong representation (272 samples)
@@ -87,7 +85,16 @@ Class performance varies significantly:
 - **Water Bodies**: Failed to identify (F1=0.00) despite presence in dataset (2 samples)
 
 The confusion matrix shows misclassifications, particularly for minority classes. Class imbalance remains the primary challenge, with Trees (272) overrepresented compared to Water Bodies (2) and Crops (7).
-  
+
+- **Support Vector Machine (SVM):**
+The SVM classification model achieves 82% accuracy across five land cover classes. Performance varies significantly by class:
+
+- **Trees**: Strong performance (F1=0.89) with good representation (272 samples)
+- **Built up Areas** and **Rangeland**: Solid performance (F1=0.75, F1=0.74)
+- **Water Bodies**: Perfect precision but lower recall (F1=0.67), limited by few samples
+- **Crops**: Failed to identify (F1=0.00) due to severe underrepresentation (7 samples)
+
+The prediction probability distribution shows high confidence at extremes (0 and 1), with fewer mid-range predictions. Class imbalance remains the primary challenge, particularly for minority classes.
 ---
 
 ## **Tools and Libraries**  
@@ -102,7 +109,7 @@ The confusion matrix shows misclassifications, particularly for minority classes
 1. Clone the repository:  
    ```bash  
    git clone https://github.com/BreadcrumbsSentinel-2-Image-Classification-Using-Random-Forest-and-SVM.git  
-   cd entinel-2-Image-Classification   
+   cd sentinel-2-Image-Classification   
    ```  
 
 2. Install dependencies:  
@@ -111,11 +118,11 @@ The confusion matrix shows misclassifications, particularly for minority classes
    ```  
 
 3. Run the notebooks:  
-   Open Jupyter Notebook and follow the steps in the `EDA_and_Machine_Learning.ipynb` and `Model Training` file.  
+   Open Jupyter Notebook and follow the steps in the `EDA_and_Machine_Learning.ipynb` and `Model Training` files.  
 
 ---
 
 ## **Contributors**  
 - **Abdulquawiyy A. Owolabi** - Geospatial Scientist  
 
-For questions or contributions, feel free to reach out or open an issue in this repository. 
+Feel free to reach out or open an issue in this repository for questions or contributions. 
