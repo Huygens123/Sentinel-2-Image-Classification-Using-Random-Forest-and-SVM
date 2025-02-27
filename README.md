@@ -76,6 +76,17 @@ After preprocessing the data, machine learning models were applied to classify l
 ---
 ## **Accuracy Assessment of the Models**  
 - **Random Forest:**
+  # Model Performance
+
+The Random Forest classifier achieves 82% overall accuracy with bimodal prediction probability distribution, showing high confidence at extremes (0 and 1).
+
+Class performance varies significantly:
+- **Trees**: Excellent performance (F1=0.88) with strong representation (272 samples)
+- **Built up Areas** and **Rangeland**: Good performance (F1=0.78, F1=0.75)
+- **Crops**: Poor performance (F1=0.22) with very few samples (7)
+- **Water Bodies**: Failed to identify (F1=0.00) despite presence in dataset (2 samples)
+
+The confusion matrix shows misclassifications, particularly for minority classes. Class imbalance remains the primary challenge, with Trees (272) overrepresented compared to Water Bodies (2) and Crops (7).
   
 ---
 
