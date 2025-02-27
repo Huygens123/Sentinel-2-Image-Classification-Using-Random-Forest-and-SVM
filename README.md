@@ -1,4 +1,4 @@
-x# Sentinel-2-Image-Classification-Using-Random-Forest-and-SVM
+# Sentinel-2-Image-Classification-Using-Random-Forest-and-SVM
 
 ## **Project Overview**  
 This project analyses Sentinel-2 satellite imagery for Iwo Local Government, Osun State, Nigeria. The study focuses on understanding spatial patterns, extracting key insights using machine learning models, and visualizing vegetation and land cover features.  
