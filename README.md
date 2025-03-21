@@ -93,8 +93,7 @@ The SVM classification model achieves 82% accuracy across five land cover classe
 - **Built up Areas** and **Rangeland**: Solid performance (F1=0.75, F1=0.74)
 - **Water Bodies**: Perfect precision but lower recall (F1=0.67), limited by few samples
 - **Crops**: Failed to identify (F1=0.00) due to severe underrepresentation (7 samples)
-
-**The prediction probability distribution shows high confidence at extremes (0 and 1), with fewer mid-range predictions. Class imbalance remains the primary challenge, particularly for minority classes.
+The prediction probability distribution shows high confidence at extremes (0 and 1), with fewer mid-range predictions. Class imbalance remains the primary challenge, particularly for minority classes.
 ---
 
 ## **Tools and Libraries**  
